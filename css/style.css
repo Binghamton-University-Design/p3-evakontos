@@ -1,1 +1,46 @@
 /*stylesheet*/
+
+body {
+	margin: 0;
+	font-family: 'Avenir';
+}
+
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+  	overflow: hidden;
+  	background-color: #a6cbe2;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3em;
+  text-decoration: none;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+ul.topnav li.right {
+	float: right;
+	margin-left: 1em;
+	margin-right: 3em;
+}
+
+ul.topnav li.left {
+	float: left;
+	margin-left: 1em;
+	margin-right: 2em;
+}
+
+ul.topnav img.logo {
+	float: left;
+	margin-left: 3em;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
