@@ -116,6 +116,15 @@ button {
 	padding-right: 2em;
 	line-height: 1.3em;
 }
+
+#sendlove {
+	position: absolute;
+	text-align: center;
+	padding: 2em;
+	color: #636363;
+	font-size: 1.8em;
+}
+
 	
 	
 
