@@ -98,6 +98,7 @@ button {
 	width: 100%;
 	height: 700px;
 	display: flex;
+	order: 1;
 }
 
 .container2 {
@@ -109,10 +110,21 @@ button {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	order: 2;
 }
 
-.container4 h1 {
-	justify-content: center;
+.container3 {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	order: 3;
+}
+
+.container4 {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	order: 4;
 }
 
 .main {
@@ -121,13 +133,16 @@ button {
 	padding-top: 10em;
 	padding-bottom: 10em;
 	position: absolute;
+	z-index: 1;
+	justify-content: space-between;
 }
 
 .main h1{
 	color: #636363;
 	text-align: center;
 	font-size: 3em;
-	/*position: absolute;*/
+	position: relative;
+	z-index: 2;
 }
 
 .main h2{
@@ -146,11 +161,18 @@ button {
 	align-items: center;
 }
 
+.heartplusmind {
+	/*position: absolute;*/
+}
+
 #header h1 {
 	text-align: center;
 	padding: 2em;
 	color: #636363;
 	font-size: 3em;
+	position: absolute;
+	z-index: 100;
+	order: 1;
 }
 
 #header h2 {
@@ -158,6 +180,9 @@ button {
 	padding: 2em;
 	color: #636363;
 	font-size: 1.8em;
+	/*position: absolute;*/
+	z-index: 100;
+	order: 2;
 }
 
 #love {
@@ -165,6 +190,7 @@ button {
 	padding: 2em;
 	color: #636363;
 	font-size: 1.8em;
+	/*position: absolute;*/
 }
 
 #positivity {
@@ -172,9 +198,22 @@ button {
 	padding: 2em;
 	color: #636363;
 	font-size: 1.8em;
+	/*position: absolute;*/
 }
 
 #knowledge {
+	text-align: center;
+	padding: 2em;
+	color: #636363;
+	font-size: 1.8em;
+	/*position: absolute;*/
+}
+
+.trophy{
+	align-self: flex-end;
+}
+
+#become {
 	text-align: center;
 	padding: 2em;
 	color: #636363;
@@ -236,10 +275,11 @@ button {
 #ourgoal h1{
 	text-align: center;
 	position: absolute;
-	padding-left: 20em;
-	padding-right: 20em;
+	padding-left: 10em;
+	padding-right: 10em;
 	padding-top: 5em;
 	padding-bottom: 5em;
+	z-index: 3;
 }
 
 .rightcolumn h2 {
@@ -250,8 +290,49 @@ button {
 	margin-right: 10em;
 }
 
+#wordcloud {
+	z-index: 1;
+}
+
 .learn h1{
 	font-size: 3em;
 	text-align: center;
-
+	padding-left: 4.2em;
+	padding-right: 4.2em;
+	padding-bottom: 1em;
 }
+
+.learn h2{
+	color: #636363;
+	float: right;
+	font-size: 1.8em;
+	padding-left: 1em;
+	padding-right: 10em;
+	line-height: 1.3em;
+}
+
+.getinvolved{
+	font-size: 7em;
+	font-weight: 500;
+	margin-top: 1em;
+	color: #636363;
+	align-items: center;
+	justify-content: center;
+}
+
+.columns {
+	display:flex;
+	flex-direction: row;
+}
+
+#arrow {
+	float:right;
+	margin-top: -2em;
+}
+
+.rightcolumn button {
+	font-size: 1.4em;
+	float:right;
+	margin-right: 8em;
+}
+
